@@ -2,19 +2,39 @@
   "name": "pdfjs",
   "version": "2.1.0",
   "main": "./lib/pdf.js",
+  "files": [
+    "lib/",
+    "external/",
+    "cmaps/"
+  ],
   "description": "Generic build of Mozilla's PDF.js library.",
   "keywords": [
     "Mozilla",
     "pdf",
     "pdf.js"
   ],
+  "scripts": {
+    "test": "echo \"No tests here yet\" && echo 0",
+    "format": "prettier --write \"lib/**/*.js\"",
+    "lint": "eslint lib/"
+  },
   "homepage": "http://mozilla.github.io/pdf.js/",
   "bugs": "https://github.com/nfantone/pdf.js/issues",
   "license": "Apache-2.0",
   "dependencies": {
     "node-ensure": "^0.0.0"
   },
-  "format": "amd",
+  "devDependencies": {
+    "prettier": "^1.16.1",
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^3.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nfantone/pdfjs-dist"
