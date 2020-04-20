@@ -1,7 +1,7 @@
 'use strict';
 
-let pdfjsLib = require('pdfjs/lib/pdf');
+let pdfjsLib = require('./lib/pdf');
 // eslint-disable-next-line import/no-webpack-loader-syntax
-let PdfjsWorker = require('worker-loader!pdfjs/lib/pdf.worker');
+let PdfjsWorker = require('worker-loader!./lib/pdf.worker');
 
 pdfjsLib.GlobalWorkerOptions.workerPort = new PdfjsWorker();
