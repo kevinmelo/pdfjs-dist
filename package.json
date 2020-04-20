@@ -5,7 +5,8 @@
   "files": [
     "lib/",
     "external/",
-    "cmaps/"
+    "cmaps/",
+    "web/"
   ],
   "description": "Generic build of Mozilla's PDF.js library.",
   "keywords": [
