@@ -1077,8 +1077,6 @@
             let globalEventBus = null;
 
             function getGlobalEventBus(dispatchToDOM = false) {
-                console.error("getGlobalEventBus is deprecated, use a manually created EventBus instance instead.");
-
                 if (!globalEventBus) {
                     globalEventBus = new EventBus({
                         dispatchToDOM
@@ -1186,11 +1184,7 @@
                     arr[write] = moved[read];
                 }
             }
-
-            /***/
-        }),
-        /* 4 */
-        /***/ (function (module, exports, __w_pdfjs_require__) {
+        }), (function (module, exports, __w_pdfjs_require__) {
 
             "use strict";
 
