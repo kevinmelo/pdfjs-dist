@@ -5,3 +5,5 @@ let pdfjsLib = require('./lib/pdf');
 let PdfjsWorker = require('worker-loader!./lib/pdf.worker');
 
 pdfjsLib.GlobalWorkerOptions.workerPort = new PdfjsWorker();
+
+module.exports = pdfjsLib;
