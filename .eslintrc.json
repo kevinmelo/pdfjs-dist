@@ -1,5 +1,9 @@
 {
-  "extends": ["standard", "prettier/standard", "plugin:prettier/recommended"],
+  "extends": [
+    "standard",
+    "prettier/standard",
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": {
     "sourceType": "script"
   },
@@ -10,9 +14,23 @@
     "node": true
   },
   "rules": {
-    "semi": [2, "always"],
+    "semi": [
+      2,
+      "always"
+    ],
     "no-extra-semi": 2,
-    "strict": ["error", "global"],
-    "no-console": ["error", { "allow": ["warn", "error"] }]
+    "strict": [
+      "error",
+      "global"
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ]
   }
 }
