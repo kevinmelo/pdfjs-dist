@@ -1,6 +1,6 @@
 {
   "name": "pdfjs",
-  "version": "2.4.456",
+  "version": "2.6.347",
   "main": "index.js",
   "files": [
     "lib/",
